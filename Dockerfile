@@ -10,7 +10,7 @@ RUN git clone https://github.com/2LJDC/mini-server
 
 RUN cd /app/mini-server
 
-RUN cargo build --release
+RUN cd /app/mini-server; cargo build --release
 
 RUN cp /app/mini-server/target/release/min-server /app/mini-server
 
