@@ -33,4 +33,4 @@ RUN chmod 755 mini-server
 
 EXPOSE 8000
 
-CMD ["/app/mini-server"]
+CMD ["/app/mini-server/target/release/mini-server"]
