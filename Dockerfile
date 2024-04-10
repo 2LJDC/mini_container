@@ -10,9 +10,11 @@ RUN git clone https://github.com/2LJDC/mini-server
 
 RUN cd /app/mini-server
 
-RUN cd /app/mini-server; cargo build --release
+#RUN cd /app/mini-server; cargo build --release
 
-RUN cp /app/mini-server/target/release/mini-server /app/mini-server
+RUN cd /app/mini-server; cargo install --path /app
+
+#RUN cp /app/mini-server/target/release/mini-server /app/mini-server
 
 RUN chmod 755 mini-server
 
