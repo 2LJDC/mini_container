@@ -1,5 +1,5 @@
-FROM rust:latest #as builder
-
+FROM rust:latest
+ #as builder
 WORKDIR /app
 
 RUN git clone https://github.com/2LJDC/test
