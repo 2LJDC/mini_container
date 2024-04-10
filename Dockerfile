@@ -23,7 +23,7 @@ COPY --from=builder /app/www /app/www
 
 COPY --from=builder /app/mini-server /app/mini-server
 
-RUN chmod 755 mini-server
+RUN chmod 755 /app/mini-server
 
 EXPOSE 8000
 
