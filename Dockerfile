@@ -16,6 +16,8 @@ RUN cp /app/mini-server/target/release/mini-server /app/mini-server
 
 RUN chmod 755 mini-server
 
+RUN whoami
+
 
 FROM debian
 
@@ -24,6 +26,8 @@ COPY --from=builder /app/www /app/www
 COPY --from=builder /app/mini-server /app/mini-server
 
 RUN chmod 755 /app/mini-server
+
+RUN whoami
 
 EXPOSE 8000
 
